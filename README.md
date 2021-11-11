@@ -3,6 +3,7 @@
 <p align="center">
   <img style="object-fit: cover;" src="./logos/cs.png" width="150" height="150" alt="cs">
   <img style="object-fit: cover;" src="./logos/java.png" width="150" height="150" alt="cs">
-  <img style="object-fit: cover;" src="./logos/docker.png" width="150" height="150" alt="cs">
   <img style="object-fit: cover;" src="./logos/py.png" width="150" height="150" alt="cs">
+  <img style="object-fit: cover;" src="./logos/docker.png" width="150" height="150" alt="cs">
+  <img style="object-fit: cover;" src="./logos/k8s.png" width="150" height="150" alt="cs">
 </p>
