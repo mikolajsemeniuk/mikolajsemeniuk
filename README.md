@@ -6,6 +6,8 @@
   <img style="object-fit: contain;" src="./logos/py.png" width="70" height="70" alt="cs">
   <img style="object-fit: contain;" src="./logos/docker.png" width="70" height="70" alt="cs">
   <img style="object-fit: contain;" src="./logos/k8s.png" height="70" alt="cs">
+  <img style="object-fit: contain;" src="./logos/linux.png" height="70" alt="cs">
+  <img style="object-fit: contain;" src="./logos/go.png" height="70" alt="cs">
   <img style="object-fit: contain;" src="./logos/angular1.png" height="70" alt="cs">
   <img style="object-fit: contain;" src="./logos/vue.png" height="70" alt="cs">
   <img style="object-fit: contain;" src="./logos/js.png" height="70" alt="cs">
