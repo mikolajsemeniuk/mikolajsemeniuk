@@ -17,4 +17,4 @@
 <h3>Experience:</h3>
 <h5>You can download my CV in:</h5>
 <p>[english (PDF)]()</p>
-<p>[polish (PDF)]()</p>
+<a href="https://github.com/mikolajsemeniuk/mikolajsemeniuk/blob/main/cvs/cv_mikolaj_semeniuk_pl.pdf">polish (PDF)</a>
