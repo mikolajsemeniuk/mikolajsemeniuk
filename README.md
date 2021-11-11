@@ -4,6 +4,6 @@
   <img style="object-fit: contain;" src="./logos/cs.png" width="70" height="70" alt="cs">
   <img style="object-fit: contain;" src="./logos/java.png" width="70" height="70" alt="cs">
   <img style="object-fit: contain;" src="./logos/py.png" width="70" height="70" alt="cs">
-  <img style="object-fit: contain;" src="./logos/docker.png" width="70" height="70" alt="cs">
+  <img style="object-fit: contain;" src="./logos/docker1.png" width="70" height="70" alt="cs">
   <img style="object-fit: contain;" src="./logos/k8s.png" height="70" alt="cs">
 </p>
