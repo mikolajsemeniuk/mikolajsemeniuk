@@ -4,4 +4,5 @@
   <img style="object-fit: cover;" src="./logos/cs.png" width="150" height="150" alt="cs">
   <img style="object-fit: cover;" src="./logos/java.png" width="150" height="150" alt="cs">
   <img style="object-fit: cover;" src="./logos/docker.png" width="150" height="150" alt="cs">
+  <img style="object-fit: cover;" src="./logos/python.png" width="150" height="150" alt="cs">
 </p>
