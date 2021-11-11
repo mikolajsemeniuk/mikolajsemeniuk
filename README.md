@@ -18,9 +18,9 @@
 <h5>You can download my CV below 👇.</h5>
 <ul>
   <li>
-    <p>
-      [english (PDF)]()
-    </p>
+    <a href="https://github.com/mikolajsemeniuk/mikolajsemeniuk/blob/main/cvs/cv_mikolaj_semeniuk_pl.pdf">
+      english (PDF)
+    </a>
   </li>
   <li>
     <a href="https://github.com/mikolajsemeniuk/mikolajsemeniuk/blob/main/cvs/cv_mikolaj_semeniuk_pl.pdf">
@@ -32,7 +32,7 @@
  <ul>
   <li>
     <a href="https://stackoverflow.com/users/13947931/mikolaj-semeniuk">
-      stackoverlow
+      StackOverlow
     </a>
   </li>
  </ul>
