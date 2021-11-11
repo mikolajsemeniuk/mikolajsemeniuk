@@ -1,4 +1,5 @@
-<h1>Hi 👋, I'm Mikolaj</h1>
+<h1>Hi 👋, I'm Mikolaj.</h1>
+<h5>I do learning new stuff for fun especially related to AI and ML.</h5>
 <h3>Technologies, I use:</h3>
 <p align="center">
   <img style="object-fit: contain;" src="./logos/cs.png" width="70" height="70" alt="cs">
