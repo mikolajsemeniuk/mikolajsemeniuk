@@ -32,7 +32,12 @@
  <ul>
   <li>
     <a href="https://stackoverflow.com/users/13947931/mikolaj-semeniuk">
-      StackOverlow
+      StackOverflow
+    </a>
+  </li>
+  <li>
+    <a href="https://math.stackexchange.com/users/872720/mikolaj-semeniuk">
+      Math StackExchange
     </a>
   </li>
  </ul>
