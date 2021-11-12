@@ -1,5 +1,5 @@
 <h1>Hi there 👋, I'm Mikolaj.</h1>
-<h5>I'm into learning new stuff for fun in my free time especially related to AI and ML using PyTorch and Tensorflow but I also like backend stuff with .NET and Spring framework. I could handle frontend as well 💪. Please check my repositories to get better insight.</h5>
+<h5>I like learning new stuff for fun in my free time especially related to AI and ML using PyTorch and Tensorflow but I also like backend stuff with .NET and Spring framework. I could handle frontend as well 💪. Please check my repositories to get better insight.</h5>
 <h3>Technologies, I use:</h3>
 <p align="center">
   <img style="object-fit: contain;" src="./logos/cs.png" width="70" height="70" alt="cs">
