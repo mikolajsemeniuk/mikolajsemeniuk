@@ -18,7 +18,7 @@
 <h5>You can download my CV below 👇.</h5>
 <ul>
   <li>
-    <a href="https://github.com/mikolajsemeniuk/mikolajsemeniuk/blob/main/cvs/cv_mikolaj_semeniuk_pl.pdf">
+    <a href="https://github.com/mikolajsemeniuk/mikolajsemeniuk/blob/main/cvs/cv_mikolaj_semeniuk_en.pdf">
       english (PDF)
     </a>
   </li>
