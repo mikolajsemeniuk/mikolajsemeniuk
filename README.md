@@ -11,7 +11,7 @@
 </p>
 
 <h3>Technologies, I worked with:</h3>
-<p align="left">
+<p align="center">
   <img style="object-fit: contain; margin: 10px;" src="./img/aws.png" height="80" alt="cs">
   <img style="object-fit: contain; margin: 10px;" src="./img/go.png" height="80" alt="cs">
   <img style="object-fit: contain; margin: 10px;" src="./img/k8s.png" height="80" alt="cs">
