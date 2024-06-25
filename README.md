@@ -10,7 +10,7 @@
   <img style="object-fit: contain;" src="./img/AWS-Certified-Cloud-Practitioner.png" width="100" height="100" alt="cs">
 </p>
 
-<h3>Technologies, I worked with:</h3>
+<h3 style="margin: 50px;">Technologies, I worked with:</h3>
 <div style="padding: 10px; display:flex; justify-content: space-between; width: 610px" align="left">
   <img style="object-fit: contain" src="./img/aws.png" height="80" alt="cs">
   <img style="object-fit: contain" src="./img/go.png" height="80" alt="cs">
