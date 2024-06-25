@@ -11,7 +11,7 @@
 </p>
 
 <h3>Technologies, I worked with:</h3>
-<p style="display:flex; justify-content: space-between; width: 610px" align="left">
+<div style="padding: 10px; display:flex; justify-content: space-between; width: 610px" align="left">
   <img style="object-fit: contain" src="./img/aws.png" height="80" alt="cs">
   <img style="object-fit: contain" src="./img/go.png" height="80" alt="cs">
   <img style="object-fit: contain" src="./img/k8s.png" height="80" alt="cs">
@@ -19,8 +19,8 @@
   <img style="object-fit: contain" src="./img/helm.png" height="80" alt="cs">
   <img style="object-fit: contain" src="./img/docker.png" width="80" height="80" alt="cs">
   <img style="object-fit: contain" src="./img/terraform.png" width="80" height="80" alt="cs">
-</p>
-<p style="display:flex; justify-content: space-between; width: 610px" align="left">
+</div>
+<div style="padding: 10px; display:flex; justify-content: space-between; width: 610px" align="left">
   <img style="object-fit: contain" src="./img/linux.png" height="80" alt="cs">
   <img style="object-fit: contain" src="./img/cs.png" width="80" height="80" alt="cs">
   <img style="object-fit: contain" src="./img/java.png" width="80" height="80" alt="cs">
@@ -28,7 +28,7 @@
   <img style="object-fit: contain" src="./img/vue.png" height="80" alt="cs">
   <img style="object-fit: contain" src="./img/js.png" height="80" alt="cs">
   <img style="object-fit: contain" src="./img/ts.png" height="80" alt="cs">
-</p>
+</div>
 
 <h3>Experience:</h3>
 <h5>You can download my CV below 👇.</h5>
