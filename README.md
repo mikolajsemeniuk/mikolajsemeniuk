@@ -11,21 +11,23 @@
 </p>
 
 <h3>Technologies, I worked with:</h3>
-<p align="center">
-  <img style="object-fit: contain; margin: 10px;" src="./img/aws.png" height="80" alt="cs">
-  <img style="object-fit: contain; margin: 10px;" src="./img/go.png" height="80" alt="cs">
-  <img style="object-fit: contain; margin: 10px;" src="./img/k8s.png" height="80" alt="cs">
-  <img style="object-fit: contain; margin: 10px;" src="./img/argo.png" height="80" alt="cs">
-  <img style="object-fit: contain; margin: 10px;" src="./img/helm.png" height="80" alt="cs">
-  <img style="object-fit: contain; margin: 10px;" src="./img/docker.png" width="80" height="80" alt="cs">
-  <!-- <img style="object-fit: contain; margin: 10px;" src="./img/terraform.png" width="80" height="80" alt="cs">
-  <img style="object-fit: contain; margin: 10px;" src="./img/linux.png" height="80" alt="cs">
-  <img style="object-fit: contain; margin: 10px;" src="./img/cs.png" width="80" height="80" alt="cs">
-  <img style="object-fit: contain; margin: 10px;" src="./img/java.png" width="80" height="80" alt="cs">
-  <img style="object-fit: contain; margin: 10px;" src="./img/py.png" width="80" height="80" alt="cs">
-  <img style="object-fit: contain; margin: 10px;" src="./img/vue.png" height="80" alt="cs">
-  <img style="object-fit: contain; margin: 10px;" src="./img/js.png" height="80" alt="cs">
-  <img style="object-fit: contain; margin: 10px;" src="./img/ts.png" height="80" alt="cs"> -->
+<p style="display:flex; justify-content: space-between; width: 610px" align="left">
+  <img style="object-fit: contain" src="./img/aws.png" height="80" alt="cs">
+  <img style="object-fit: contain" src="./img/go.png" height="80" alt="cs">
+  <img style="object-fit: contain" src="./img/k8s.png" height="80" alt="cs">
+  <img style="object-fit: contain" src="./img/argo.png" height="80" alt="cs">
+  <img style="object-fit: contain" src="./img/helm.png" height="80" alt="cs">
+  <img style="object-fit: contain" src="./img/docker.png" width="80" height="80" alt="cs">
+  <img style="object-fit: contain" src="./img/terraform.png" width="80" height="80" alt="cs">
+</p>
+<p style="display:flex; justify-content: space-between; width: 610px" align="left">
+  <img style="object-fit: contain" src="./img/linux.png" height="80" alt="cs">
+  <img style="object-fit: contain" src="./img/cs.png" width="80" height="80" alt="cs">
+  <img style="object-fit: contain" src="./img/java.png" width="80" height="80" alt="cs">
+  <img style="object-fit: contain" src="./img/py.png" width="80" height="80" alt="cs">
+  <img style="object-fit: contain" src="./img/vue.png" height="80" alt="cs">
+  <img style="object-fit: contain" src="./img/js.png" height="80" alt="cs">
+  <img style="object-fit: contain" src="./img/ts.png" height="80" alt="cs">
 </p>
 
 <h3>Experience:</h3>
