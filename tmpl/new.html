@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            display: grid;
+            grid-template-columns: 3fr 7fr;
+            margin: 50px;
+            gap: 50px;
+        }
+
+        h2 {
+            margin: 0px;
+            color: rgb(61, 61, 61);
+        }
+
+        hr {
+            background: rgb(235, 235, 235);
+            height: 1px;
+            border: 0px solid;
+        }
+
+        aside {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            display: grid;
+            place-items: center;
+        }
+
+        aside img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px -3px;
+        }
+
+        aside h4 {
+            margin: 15px 0px;
+            font-size: 14px;
+            color: gray;
+            font-weight: 400;
+        }
+
+        aside h4 span {
+            color: rgb(16, 105, 201);
+        }
+
+        header {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        section {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        section ul li {
+            font-size: 13px;
+            margin: 30px 0px;
+        }
+
+        main {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .date {
+            color: gray;
+            font-size: 14px;
+        }
+
+        .description {
+            padding: 20px 10px;
+        }
+
+        .responsibility {
+            margin: 20px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <aside>
+        <img src="../img/profile.jpeg">
+        <h1>
+            Mikolaj Semeniuk
+        </h1>
+        <div>
+            <h4>
+                Email:<br>
+                <span class="link">m.semeniuk@icloud.com</span>
+            </h4>
+            <h4>
+                Telephone:<br>
+                <span class="link">+48 533 838 844</span>
+            </h4>
+            <h4>
+                Github:<br>
+                <span class="link">https://github.com/mikolajsemeniuk/</span>
+            </h4>
+            <h4>
+                StackOverflow:<br>
+                <span class="link">https://stackoverflow.com/users/13947931/mikolaj-semeniuk</span>
+            </h4>
+        </div>
+    </aside>
+    <header>
+        <h2>Certificates</h2>
+        <hr>
+        <div>
+            <img src="../img/AWS-Certified-Solutions-Architect-Professional.png" width="150" height="150" alt="">
+            <img src="../img/AWS-Certified-Solutions-Architect-Associate.png" width="150" height="150" alt="">
+            <img src="../img/AWS-Certified-SysOps-Administrator-Associate.png" width="150" height="150" alt="">
+            <img src="../img/AWS-Certified-Developer-Associate.png" width="150" height="150" alt="">
+            <img src="../img/AWS-Certified-Cloud-Practitioner.png" width="150" height="150" alt="">
+        </div>
+        <div>
+            <img src="../img/Terraform-Certified-Associate.png" width="150" height="150" alt="">
+        </div>
+    </header>
+    <section>
+        <h2>Skills</h2>
+        <hr>
+        <ul>
+            <li>
+                Very good knowledge of <b>Java</b> version <b>8</b> and its data structures, including
+                <b>Optional</b>, <b>Streams</b> and <b>Regex</b> expressions
+            </li>
+            <li>
+                Very good knowledge of <b>Spring Framework</b> and <b>Spring Security</b>
+            </li>
+            <li>
+                Very good command of <b>C#</b> version <b>5.0</b> and its data structures, inter alia,
+                structures <b>IEnumerable</b>, <b>ICollection</b>, <b>OneOf</b>, <b>LINQ</b>,
+                <b>await/async</b>, <b>Regex</b> and <b>Reflection</b>
+            </li>
+            <li>
+                Very good command of <b>.NET</b> framework and <b>Entity Framework</b>, <b>Migrations</b>,
+                <b>Identity Server 4</b> and <b>MassTransit</b>
+            </li>
+            <li>
+                Very good knowledge of <b>Python</b> version <b>3.7</b>, especially in data analysis and
+                building models to perform predictions, classification, learning about data structure, data
+                tagging, generating synthetic data using <b>Sklearn</b>, <b>Pytorch</b>, <b>Tensorflow</b> and
+                <b>Keras</b>
+            </li>
+            <li>
+                Very good knowledge of <b>Docker</b> and <b>Kubernetes</b>
+            </li>
+            <li>
+                Very good knowledge of <b>Linux</b> and <b>Bash</b>
+            </li>
+            <li>
+                Very good knowledge of <b>Windows Forms</b>
+            </li>
+            <li>
+                Very good knowledge of <b>VueJS</b> and <b>AngularJS</b> frameworks, frontend application
+                <b>state management</b>, dynamic data sending, displaying <b>API requests</b>
+            </li>
+            <li>
+                Very good knowledge of <b>NodeJS</b> with <b>Typescript</b>, <b>ExpressJS</b>, <b>NestJS</b> and
+                <b>TypeORM</b>
+            </li>
+            <li>
+                Very good knowledge of <b>Go</b> with <b>Go-Gin</b>, <b>GORM</b>, <b>GRPC</b>
+            </li>
+            <li>
+                Very good knowledge of the practices of writing <b>Clean Code</b> <b>Uncle Bob's</b>,
+                <b>SOLID</b> principles, <b>DDD</b>, <b>TDD</b>, <b>YARNI</b>, <b>DRY</b>, <b>KISS</b> and
+                knowledge of design patterns such as <b>CQRS</b>, <b>CQS</b>, <b>MVC</b>, <b>SOA</b>
+            </li>
+            <li>
+                Very good knowledge of relational databases such as: <b>SQL Server</b> with <b>SQL Queries</b>,
+                <b>Stored Procedures</b>, <b>Triggers</b>, <b>Indexes</b> and <b>MySQL</b>, <b>PostgresSQL</b>
+            </li>
+            <li>
+                Very good knowledge of non-relational databases such as: <b>MongoDB</b>, <b>Redis</b>, poor
+                <b>Apache Cassandra</b>
+            </li>
+            <li>
+                Ability to write unit tests and tests using the <b>Selenium</b> framework
+            </li>
+            <li>
+                Very good command of the <b>English language</b>
+            </li>
+            <li>
+                Very good knowledge of of environments such as: <b>Visual Studio</b>, <b>Intellij</b>, <b>Visual
+                    Studio Code</b>, <b>Google Colab</b>, <b>Jupyter notebook</b> and <b>Conda</b>
+            </li>
+        </ul>
+    </section>
+    <main>
+        <h2>Experience</h2>
+        <hr>
+        <h3>
+            Limango
+        </h3>
+        <p>
+            Description goes here...
+        </p>
+        <div class="content">
+            <div class="date">
+                now-<br>
+                2022.02
+            </div>
+            <div>
+                <header>
+                    Implementation of new functionalities and modernization of the current
+                    micro services and infrastructure. I was responsible for:
+                </header>
+                <ul class="description">
+                    <li class="responsibility">
+                        Create and deploy cloud infrastructure using <b>Terraform</b> with <b>Kubernetes</b>
+                        and <b>AWS</b> provider
+                    </li>
+                    <li class="responsibility">
+                        Configuring pods, replicaSets, deployments and services in <b>Kubernetes</b>
+                    </li>
+                    <li class="responsibility">
+                        Implementation of current and new business logic
+                    </li>
+                    <li class="responsibility">
+                        Configure and integrate <b>AWS</b> services such as: <b>OpenSearch/ElasticSearch</b>,
+                        <b>DynamoDB</b>, <b>SQS</b>, <b>SNS</b>, <b>S3</b> with existing and new services
+                    </li>
+                    <li class="responsibility">
+                        Adding Elastic APM monitoring to existing services
+                    </li>
+                    <li class="responsibility">
+                        Benchmarking and improving performance of existing services by making go code
+                        asynchronous using routines, waitGroups and channel worker pools, replacing `http`, or
+                        `encoding/json` with more efficient implementations
+                        such as `fasthttp` or custom json encoders/decoders
+                    </li>
+                    <li class="responsibility">
+                        something
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h3>
+            Ernst & Young
+        </h3>
+        <p>
+            I was employed as a junior analyst, but the scope of my duties varied depending on the
+            projects
+            to which I was assigned. Below are the projects and responsibilities.
+        </p>
+        <div class="content">
+            <div class="date">
+                2021.09-<br>
+                2021.01
+            </div>
+            <div>
+                <header>
+                    Implementation of new functionalities and modernization of the internal portal of the
+                    British insurer. I was responsible for:
+                </header>
+                <ul class="description">
+                    <li class="responsibility">
+                        Adding new functionalities contained on the portal: <b>Jira</b> and
+                        <b>Confluence</b> in
+                        accordance with the <b>Scrum</b> methodology
+                    </li>
+                    <li class="responsibility">
+                        Communicating with <b>Business Analysts</b> and <b>Scrum Master</b> from Great
+                        Britain
+                        in English
+                    </li>
+                    <li class="responsibility">
+                        Implementation of <b>API</b> endpoints using <b>Spring Web</b> compatible with the
+                        <b>Controller, Service, Repository</b> pattern
+                    </li>
+                    <li class="responsibility">
+                        Implementing user rights and roles and generating authentication tokens using
+                        <b>OAuth2</b> and <b>Spring Security</b>
+                    </li>
+                    <li class="responsibility">
+                        Configuration of communication between <b>micro services</b> using <b>RabbitMQ</b>
+                    </li>
+                    <li class="responsibility">
+                        Implementation of writes and reads to the <b>SQL Server</b> relational database
+                    </li>
+                    <li class="responsibility">
+                        Sending and receiving <b>SOAP</b> and <b>REST</b> requests
+                    </li>
+                    <li class="responsibility">
+                        Upload files using requests
+                    </li>
+                    <li class="responsibility">
+                        Creating new branches, resolving merge conflicts and adding changes to the
+                        repository
+                        via <b>Git</b> version control versions,
+                        and <b>Azure Dev Ops</b>
+                    </li>
+                    <li class="responsibility">
+                        Writing unit tests
+                    </li>
+                    <li class="responsibility">
+                        Testing <b>API</b> with <b>Postman</b>, <b>Insomnii</b> and <b>Swagger</b>
+                    </li>
+                    <li class="responsibility">
+                        Writing and reading technical documentation
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="date">
+                2020.12-<br>
+                2020.11
+            </div>
+            <div>
+                <header>
+                    Data analysis for <b>EY</b> internal <b>EY</b> business process recognition tool. I was
+                    responsible for:
+                </header>
+                <ul class="description">
+                    <li class="responsibility">
+                        Cleaning and preparation of collected data
+                    </li>
+                    <li class="responsibility">
+                        Data analysis using <b>python 3.7</b>, <b>sklearn</b>, <b>pandas</b>, <b>numpy</b>,
+                        <b>matplotib</b> and <b>seaborn</b>
+                    </li>
+                    <li class="responsibility">
+                        Feature detection with <b>sklearn</b> algorithms such as <b>PCA</b>, <b>K-means</b>
+                        and
+                        <b>K Nearest Neighbors</b>
+                    </li>
+                    <li class="responsibility">
+                        Building data structure learning models using <b>Pytorch</b> and <b>tensorflow</b>
+                        such
+                        as <b>Autoencoders</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="date">
+                2020.11- <br>
+                2020.05
+            </div>
+            <div>
+                <header>
+                    Implementation of new functionalities and modernization of the internal portal of the
+                    company
+                    from the United States dealing with the production of prostheses. I was responsible for:
+                </header>
+                <ul class="description">
+                    <li class="responsibility">
+                        Adding new functionalities contained on the portal: <b>Jira</b> and
+                        <b>Confluence</b> in
+                        accordance with the <b>Scrum</b> methodology
+                    </li>
+                    <li class="responsibility">
+                        Communicating with <b>Business Analysts</b> and <b>Scrum Master</b> from the United
+                        States in English
+                    </li>
+                    <li class="responsibility">
+                        Implementation of <b>API</b> endpoints using <b>Asp Net Core Mvc</b> compatible with
+                        the
+                        <b>Controller, Service, IService</b> pattern
+                    </li>
+                    <li class="responsibility">
+                        Implementing user rights and roles and generating authentication tokens using
+                        <b>OAuth2</b> and <b>Asp Net Identity</b> and <b>Identity Server 4</b>
+                    </li>
+                    <li class="responsibility">
+                        Communication configuration between <b>microservices</b> using <b>RabbitMQ</b> and
+                        <b>MassTransit</b>
+                    </li>
+                    <li class="responsibility">
+                        Implementation of writes and reads to the <b>SQL Server</b> relational database and
+                        <b>Redis</b> NoSQL database
+                    </li>
+                    <li class="responsibility">
+                        Sending and receiving <b>GRAPHQL</b> requests using the <b>Hot Chocolate</b>
+                        framework
+                        and <b>REST</b> requests
+                    </li>
+                    <li class="responsibility">
+                        Upload files using requests
+                    </li>
+                    <li class="responsibility">
+                        Creating new branches, resolving merge conflicts and adding changes to the
+                        repository
+                        via <b>Git</b> version control versions,
+                        and <b>Azure Dev Ops</b>
+                    </li>
+                    <li class="responsibility">
+                        Writing unit tests with <b>xUnit</b> and <b>Moq</b>
+                    </li>
+                    <li class="responsibility">
+                        Testing <b>API</b> with <b>Postman</b>, <b>Insomnii</b> and <b>Swagger</b>
+                    </li>
+                    <li class="responsibility">
+                        Writing and reading technical documentation
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="date">
+                2020.05-<br>
+                2020.02
+            </div>
+            <div>
+                <header>
+                    Implementation of an internal invoice settlement portal for a company from Poznań using the
+                    NodeJS language and the Express.js framework. I was responsible for:
+                </header>
+                <ul class="description">
+                    <li class="responsibility">
+                        Adding new functionalities in accordance with the <b>Scrum</b> methodology
+                    </li>
+                    <li class="responsibility">
+                        Communicating with <b>client</b> and <b>Scrum Master</b>
+                    </li>
+                    <li class="responsibility">
+                        File validation in terms of business logic
+                    </li>
+                    <li class="responsibility">
+                        Uploading, reading and saving a large number of files (mainly excel files) on the
+                        server
+                    </li>
+                    <li class="responsibility">
+                        Sending emails to customers who are in arrears with payment of their debts
+                    </li>
+                    <li class="responsibility">
+                        Testing <b>API</b> with <b>Postman</b>, <b>Insomnii</b> and <b>Swagger</b>
+                    </li>
+                    <li class="responsibility">
+                        Writes and reads to the <b>PostgresSQL</b> relational database
+                    </li>
+                    <li class="responsibility">
+                        Creating new branches, resolving merge conflicts and adding changes to the
+                        repository
+                        via <b>Git</b> version control versions,
+                        and <b>GitLab</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h3>
+            LastLevel
+        </h3>
+        <p>
+            I worked as a full-stack developer using technologies such as PHP with Laravel framework and
+            JavaScript with frameworks, AngularJS and VueJS
+        </p>
+        <div class="content">
+            <div class="date">
+                2019.11-<br>
+                2019.02
+            </div>
+            <div>
+                <header>
+                    Implementation of new functionalities on the front and backend side in online stores and
+                    blogs as well as data analysis for these portals. I was responsible for:
+                </header>
+                <ul class="description">
+                    <li class="responsibility">
+                        Maintaining application state with <b>Vue Store</b> and <b>Angular NGRX</b>
+                    </li>
+                    <li class="responsibility">
+                        Sending <b>REST</b> requests using <b>Vue Axios</b> and <b>Angular HttpClient</b> to
+                        the
+                        backend
+                    </li>
+                    <li>
+                        Generating mobile and desktop applications from JavaScript code using
+                        <b>Electron</b>
+                        and <b>Apache Cordova</b>
+                    </li>
+                    <li class="responsibility">
+                        Dynamic display of backend data
+                    </li>
+                    <li class="responsibility">
+                        Implementation of new artwork using <b>VueJS</b> and <b>AngularJS</b>, and
+                        <b>bootstrap</b>, <b>material</b>, <b>tailwind css frameworks</b> and <b>SCSS</b>
+                    </li>
+                    <li class="responsibility">
+                        Implementation of <b>API</b> endpoints using the <b>Laravel</b> framework compatible
+                        with the <b>MVC</b> pattern
+                    </li>
+                    <li class="responsibility">
+                        Implementing user rights and roles and generating authentication tokens using
+                        <b>Laravel
+                            Passport</b>
+                    </li>
+                    <li class="responsibility">
+                        Implementation of writes and reads to the <b>MySQL</b> referential database
+                    </li>
+                    <li class="responsibility">
+                        Sending emails to users
+                    </li>
+                    <li class="responsibility">
+                        Testing <b>API</b> with <b>Postman</b>, <b>Insomnii</b> and <b>Swagger</b>
+                    </li>
+                    <li class="responsibility">
+                        Creating new branches, resolving merge conflicts and adding changes to the
+                        repository
+                        via <b>Git</b> version control versions,
+                        and <b>GitLab</b>, and <b>RedMine</b>
+                    </li>
+                    <li>
+                        Data analysis using the <b>Python</b> language and algorithms: <b>PCA</b>,
+                        <b>Logistic
+                            Regression</b>, <b>Random Forests</b>, <b>K- Means</b>, <b>K Nearest
+                            Neighbors</b>
+                        from <b>Sklearn</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
