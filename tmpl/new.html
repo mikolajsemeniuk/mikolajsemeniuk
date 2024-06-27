@@ -75,13 +75,22 @@
             display: flex;
         }
 
+        .content div header {
+            padding-left: 27px;
+            padding-bottom: 30px;
+        }
+
         .date {
             color: gray;
             font-size: 14px;
         }
 
         .description {
-            padding: 20px 10px;
+            margin: 0px;
+        }
+
+        .responsibility:nth-child(1) {
+            margin: 0px 0px;
         }
 
         .responsibility {
@@ -208,257 +217,130 @@
         <h2>Experience</h2>
         <hr>
         <h3>
-            Limango
+            Limango (Senior Golang developer and DevOps engineer)
         </h3>
-        <p>
-            Description goes here...
-        </p>
         <div class="content">
             <div class="date">
                 now-<br>
-                2022.02
+                2022.01
             </div>
             <div>
-                <header>
-                    Implementation of new functionalities and modernization of the current
-                    micro services and infrastructure. I was responsible for:
-                </header>
                 <ul class="description">
+                    <li class="responsibility">
+                        Participate in architectural discussions and decision-making to improve system design and
+                        functionality with other cross-functional teams to gather requirements and ensure successful
+                        project delivery
+                    </li>
+                    <li class="responsibility">
+                        Leading technical interviews to ensure the addition of highly skilled
+                        professionals to the team and recruiting other senior developers
+                    </li>
                     <li class="responsibility">
                         Create and deploy cloud infrastructure using <b>Terraform</b> with <b>Kubernetes</b>
                         and <b>AWS</b> provider
                     </li>
                     <li class="responsibility">
-                        Configuring pods, replicaSets, deployments and services in <b>Kubernetes</b>
-                    </li>
-                    <li class="responsibility">
-                        Implementation of current and new business logic
+                        Develop and maintain pods, replicaSets, deployments and services in <b>Kubernetes</b> using
+                        <b>Helm</b>
+                        package manager and <b>ArgoCD</b>
                     </li>
                     <li class="responsibility">
                         Configure and integrate <b>AWS</b> services such as: <b>OpenSearch/ElasticSearch</b>,
-                        <b>DynamoDB</b>, <b>SQS</b>, <b>SNS</b>, <b>S3</b> with existing and new services
+                        <b>DynamoDB</b>, <b>SQS</b>, <b>SNS</b>, <b>S3</b> and <b>Lambda</b> and necessary roles with
+                        existing and new APIs
                     </li>
                     <li class="responsibility">
-                        Adding Elastic APM monitoring to existing services
+                        Set up monitoring and alerting systems using <b>Prometheus</b> with <b>Grafana</b> and
+                        <b>Elastic APM</b> to track
+                        system health and performance
                     </li>
                     <li class="responsibility">
-                        Benchmarking and improving performance of existing services by making go code
-                        asynchronous using routines, waitGroups and channel worker pools, replacing `http`, or
-                        `encoding/json` with more efficient implementations
-                        such as `fasthttp` or custom json encoders/decoders
+                        Benchmarking and improving performance of existing services by leveraging advanced features such
+                        as the <b>sync</b> package for concurrent data handling, implementing efficient <b>generics</b>
+                        for reusable type-safe code, and utilizing <b>goroutines</b>, <b>channels</b> and
+                        <b>waitGroups</b> for high-performance,
+                        concurrent applications
                     </li>
                     <li class="responsibility">
-                        something
+                        Implement <b>CI/CD</b> pipelines in <b>Gitlab</b> to standardize
+                        deployments, making code reviews and writing unit tests
+                    </li>
+                    <li class="responsibility">
+                        Implement log aggregation and analysis with tools like <b>ELK (Elasticsearch, Logstash,
+                            Kibana)</b>
+                        stack
+                    </li>
+                    <li class="responsibility">
+                        Migrate legacy applications and services to a microservices architecture. Develop and maintain
+                        <b>RESTful</b> and <b>GraphQL APIs</b> to support frontend and mobile applications.
                     </li>
                 </ul>
             </div>
         </div>
-        <h3>
-            Ernst & Young
-        </h3>
-        <p>
-            I was employed as a junior analyst, but the scope of my duties varied depending on the
-            projects
-            to which I was assigned. Below are the projects and responsibilities.
-        </p>
+        <h3>Ernst & Young (Mid C# and Java Developer)</h3>
         <div class="content">
-            <div class="date">
-                2021.09-<br>
-                2021.01
-            </div>
+            <div class="date">2020.02 - Present</div>
             <div>
                 <header>
-                    Implementation of new functionalities and modernization of the internal portal of the
-                    British insurer. I was responsible for:
+                    I worked on new functionalities and modernization of internal portals for clients in the
+                    insurance and prosthetics industries from Great Britain and United states. I was responsible for:
                 </header>
                 <ul class="description">
                     <li class="responsibility">
-                        Adding new functionalities contained on the portal: <b>Jira</b> and
-                        <b>Confluence</b> in
-                        accordance with the <b>Scrum</b> methodology
+                        Architected and implemented robust API endpoints utilizing <b>Spring Web</b> and <b>Asp.Net Core
+                            MVC</b>, following
+                        the <b>Controller, Service, Repository/IService</b> pattern to ensure modularity and
+                        maintainability.
                     </li>
                     <li class="responsibility">
-                        Communicating with <b>Business Analysts</b> and <b>Scrum Master</b> from Great
-                        Britain
-                        in English
+                        Engineered secure authentication mechanisms using <b>OAuth2</b>, <b>Spring Security</b>,
+                        <b>Asp.Net Identity</b>,
+                        and <b>Identity Server 4</b> to manage user roles and permissions.
                     </li>
                     <li class="responsibility">
-                        Implementation of <b>API</b> endpoints using <b>Spring Web</b> compatible with the
-                        <b>Controller, Service, Repository</b> pattern
+                        Designed and configured reliable inter-service communication protocols leveraging
+                        <b>RabbitMQ</b> and
+                        <b>MassTransit</b> for asynchronous message passing.
                     </li>
                     <li class="responsibility">
-                        Implementing user rights and roles and generating authentication tokens using
-                        <b>OAuth2</b> and <b>Spring Security</b>
+                        Optimized data access and storage solutions, implementing CRUD operations on <b>SQL Server</b>
+                        and integrating
+                        <b>Redis</b> for efficient caching and NoSQL capabilities.
                     </li>
                     <li class="responsibility">
-                        Configuration of communication between <b>micro services</b> using <b>RabbitMQ</b>
+                        Developed comprehensive test suites using <b>JUnit</b>, <b>xUnit</b>, and <b>Moq</b> to ensure
+                        code quality and
+                        reliability, achieving high test coverage.
                     </li>
                     <li class="responsibility">
-                        Implementation of writes and reads to the <b>SQL Server</b> relational database
+                        Implemented file upload functionality and ensured data integrity through secure file handling
+                        techniques.
                     </li>
                     <li class="responsibility">
-                        Sending and receiving <b>SOAP</b> and <b>REST</b> requests
+                        Facilitated seamless version control and collaboration by managing repositories with <b>Git</b>
+                        and <b>Azure
+                            DevOps</b>, including branching strategies and merge conflict resolution.
                     </li>
                     <li class="responsibility">
-                        Upload files using requests
+                        Enabled efficient API consumption by designing and handling <b>SOAP</b>, <b>REST</b>, and
+                        <b>GRAPHQL</b> requests,
+                        utilizing the <b>Hot Chocolate</b> framework.
                     </li>
                     <li class="responsibility">
-                        Creating new branches, resolving merge conflicts and adding changes to the
-                        repository
-                        via <b>Git</b> version control versions,
-                        and <b>Azure Dev Ops</b>
+                        Authored and maintained detailed technical documentation to support ongoing development and
+                        knowledge transfer.
                     </li>
                     <li class="responsibility">
-                        Writing unit tests
+                        Ensured alignment with agile development practices, contributing to sprint planning, reviews,
+                        and retrospectives in
+                        collaboration with <b>Business Analysts</b> and <b>Scrum Masters</b>.
                     </li>
-                    <li class="responsibility">
-                        Testing <b>API</b> with <b>Postman</b>, <b>Insomnii</b> and <b>Swagger</b>
-                    </li>
-                    <li class="responsibility">
-                        Writing and reading technical documentation
-                    </li>
+
                 </ul>
             </div>
         </div>
-        <div class="content">
-            <div class="date">
-                2020.12-<br>
-                2020.11
-            </div>
-            <div>
-                <header>
-                    Data analysis for <b>EY</b> internal <b>EY</b> business process recognition tool. I was
-                    responsible for:
-                </header>
-                <ul class="description">
-                    <li class="responsibility">
-                        Cleaning and preparation of collected data
-                    </li>
-                    <li class="responsibility">
-                        Data analysis using <b>python 3.7</b>, <b>sklearn</b>, <b>pandas</b>, <b>numpy</b>,
-                        <b>matplotib</b> and <b>seaborn</b>
-                    </li>
-                    <li class="responsibility">
-                        Feature detection with <b>sklearn</b> algorithms such as <b>PCA</b>, <b>K-means</b>
-                        and
-                        <b>K Nearest Neighbors</b>
-                    </li>
-                    <li class="responsibility">
-                        Building data structure learning models using <b>Pytorch</b> and <b>tensorflow</b>
-                        such
-                        as <b>Autoencoders</b>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="content">
-            <div class="date">
-                2020.11- <br>
-                2020.05
-            </div>
-            <div>
-                <header>
-                    Implementation of new functionalities and modernization of the internal portal of the
-                    company
-                    from the United States dealing with the production of prostheses. I was responsible for:
-                </header>
-                <ul class="description">
-                    <li class="responsibility">
-                        Adding new functionalities contained on the portal: <b>Jira</b> and
-                        <b>Confluence</b> in
-                        accordance with the <b>Scrum</b> methodology
-                    </li>
-                    <li class="responsibility">
-                        Communicating with <b>Business Analysts</b> and <b>Scrum Master</b> from the United
-                        States in English
-                    </li>
-                    <li class="responsibility">
-                        Implementation of <b>API</b> endpoints using <b>Asp Net Core Mvc</b> compatible with
-                        the
-                        <b>Controller, Service, IService</b> pattern
-                    </li>
-                    <li class="responsibility">
-                        Implementing user rights and roles and generating authentication tokens using
-                        <b>OAuth2</b> and <b>Asp Net Identity</b> and <b>Identity Server 4</b>
-                    </li>
-                    <li class="responsibility">
-                        Communication configuration between <b>microservices</b> using <b>RabbitMQ</b> and
-                        <b>MassTransit</b>
-                    </li>
-                    <li class="responsibility">
-                        Implementation of writes and reads to the <b>SQL Server</b> relational database and
-                        <b>Redis</b> NoSQL database
-                    </li>
-                    <li class="responsibility">
-                        Sending and receiving <b>GRAPHQL</b> requests using the <b>Hot Chocolate</b>
-                        framework
-                        and <b>REST</b> requests
-                    </li>
-                    <li class="responsibility">
-                        Upload files using requests
-                    </li>
-                    <li class="responsibility">
-                        Creating new branches, resolving merge conflicts and adding changes to the
-                        repository
-                        via <b>Git</b> version control versions,
-                        and <b>Azure Dev Ops</b>
-                    </li>
-                    <li class="responsibility">
-                        Writing unit tests with <b>xUnit</b> and <b>Moq</b>
-                    </li>
-                    <li class="responsibility">
-                        Testing <b>API</b> with <b>Postman</b>, <b>Insomnii</b> and <b>Swagger</b>
-                    </li>
-                    <li class="responsibility">
-                        Writing and reading technical documentation
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="content">
-            <div class="date">
-                2020.05-<br>
-                2020.02
-            </div>
-            <div>
-                <header>
-                    Implementation of an internal invoice settlement portal for a company from Poznań using the
-                    NodeJS language and the Express.js framework. I was responsible for:
-                </header>
-                <ul class="description">
-                    <li class="responsibility">
-                        Adding new functionalities in accordance with the <b>Scrum</b> methodology
-                    </li>
-                    <li class="responsibility">
-                        Communicating with <b>client</b> and <b>Scrum Master</b>
-                    </li>
-                    <li class="responsibility">
-                        File validation in terms of business logic
-                    </li>
-                    <li class="responsibility">
-                        Uploading, reading and saving a large number of files (mainly excel files) on the
-                        server
-                    </li>
-                    <li class="responsibility">
-                        Sending emails to customers who are in arrears with payment of their debts
-                    </li>
-                    <li class="responsibility">
-                        Testing <b>API</b> with <b>Postman</b>, <b>Insomnii</b> and <b>Swagger</b>
-                    </li>
-                    <li class="responsibility">
-                        Writes and reads to the <b>PostgresSQL</b> relational database
-                    </li>
-                    <li class="responsibility">
-                        Creating new branches, resolving merge conflicts and adding changes to the
-                        repository
-                        via <b>Git</b> version control versions,
-                        and <b>GitLab</b>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <h3>
-            LastLevel
+        <!-- <h3>
+            LastLevel (Junior Full stack engineer)
         </h3>
         <p>
             I worked as a full-stack developer using technologies such as PHP with Laravel framework and
@@ -528,15 +410,122 @@
                     </li>
                 </ul>
             </div>
+        </div> -->
+        <h3>LastLevel (Junior Full Stack Engineer)</h3>
+        <div class="content">
+            <div class="date">
+                2019.11 - 2019.02
+            </div>
+            <div>
+                <header>
+                    Worked as a Full Stack Developer using <b>PHP (Laravel)</b> and <b>JavaScript (AngularJS,
+                        VueJS)</b>. Developed
+                    and implemented new
+                    functionalities for online stores and blogs, and conducted data analysis. Key responsibilities
+                    included:
+                    </p>
+                </header>
+                <ul class="description">
+                    <li class="responsibility">
+                        Managed application state using <b>Vue Store</b> and <b>Angular NGRX</b>.
+                    </li>
+                    <li class="responsibility">
+                        Sent <b>REST</b> requests using <b>Vue Axios</b> and <b>Angular HttpClient</b> to interact with
+                        the
+                        backend.
+                    </li>
+                    <li class="responsibility">
+                        Generated mobile and desktop applications from JavaScript code using <b>Electron</b> and
+                        <b>Apache
+                            Cordova</b>.
+                    </li>
+                    <li class="responsibility">
+                        Dynamically displayed backend data on the frontend.
+                    </li>
+                    <li class="responsibility">
+                        Implemented new UI components using <b>VueJS</b>, <b>AngularJS</b>, and CSS frameworks like
+                        <b>Bootstrap</b>, <b>Material</b>, <b>Tailwind CSS</b>, and <b>SCSS</b>.
+                    </li>
+                    <li class="responsibility">
+                        Developed <b>API</b> endpoints using the <b>Laravel</b> framework, adhering to the <b>MVC</b>
+                        pattern.
+                    </li>
+                    <li class="responsibility">
+                        Managed user authentication and authorization, implementing user roles and generating
+                        authentication
+                        tokens using <b>Laravel Passport</b>.
+                    </li>
+                    <li class="responsibility">
+                        Performed database operations, including reads and writes to the <b>MySQL</b> relational
+                        database.
+                    </li>
+                    <li class="responsibility">
+                        Implemented email sending functionality for user communications.
+                    </li>
+                    <li class="responsibility">
+                        Tested <b>API</b> functionality using tools such as <b>Postman</b>, <b>Insomnia</b>, and
+                        <b>Swagger</b>.
+                    </li>
+                    <li class="responsibility">
+                        Managed version control and collaboration using <b>Git</b>, with repositories hosted on
+                        <b>GitLab</b>
+                        and task tracking via <b>RedMine</b>.
+                    </li>
+                    <li class="responsibility">
+                        Conducted data analysis using <b>Python</b> and implemented algorithms like <b>PCA</b>,
+                        <b>Logistic
+                            Regression</b>, <b>Random Forests</b>, <b>K-Means</b>, and <b>K-Nearest Neighbors</b> from
+                        <b>Sklearn</b>.
+                    </li>
+                </ul>
+            </div>
         </div>
+
         <h2>Education</h2>
         <hr>
+        <h3>
+            Warsaw University of Technology
+        </h3>
+        <div class="content">
+            <div class="date">
+                Present-<br>
+                2023.10
+            </div>
+            <div>
+                <header>
+                    I started my studies at the Warsaw School of Computer Science in extramural mode,
+                    specializing in <b>Data Science</b>. I am currently in my third year and I am starting an
+                    engineering thesis about generating synthetic data by the Deep Belief Network model. Some of my
+                    university projects were:
+                </header>
+                <ul class="description">
+                    <li class="responsibility">
+                        Writing artificial neuronal network from scratch using <b>Numpy</b> in <b>C#</b>
+                        language
+                    </li>
+                    <li class="responsibility">
+                        Creating <b>unsupervised nlp algorithms/models</b> to classify text in python and
+                        <b>PyTorch/Scikit</b>
+                    </li>
+                    <li class="responsibility">
+                        Creating <b>CQRS</b> in <b>C#</b> using <b>Identity Server 4</b> and <b>RabbitMQ</b>
+                    </li>
+                    <li class="responsibility">
+                        Creating application based on client and server using <b>Golang</b>, <b>GORM</b> and
+                        <b>GRPC</b>
+                    </li>
+                    <li class="responsibility">
+                        Creating application using <b>Go</b> with <b>Go-Gin</b>, <b>GORM</b> and <b>ReactJS</b>
+                    </li>
+                </ul>
+            </div>
+        </div>
         <h3>
             Warsaw School of Computer Science
         </h3>
         <div class="content">
             <div class="date">
-                Present-<br>
+                2023.09-<br>
                 2019.10
             </div>
             <div>
