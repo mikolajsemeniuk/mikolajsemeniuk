@@ -1,63 +1,21 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style type="text/css">
         body {
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-            margin: 0px;
-        }
-
-        .container {
-            display: flex;
-        }
-
-        .profile {
-            width: 250px;
-            height: 250px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-
-        section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-center;
-            flex: 1;
-            padding: 20px;
-        }
-
-        main {
-            flex: 2;
-            padding: 0px 50px 0px 50px;
-        }
-
-        h1 {
-            color: rgb(68, 68, 68);
+            display: grid;
+            grid-template-columns: 3fr 7fr;
+            margin: 50px;
+            gap: 50px;
         }
 
         h2 {
-            padding-top: 60px;
             color: rgb(61, 61, 61);
-        }
-
-        h3 {
-            color: rgb(68, 68, 68);
-        }
-
-        h4 {
-            margin: 5px 0px;
-            font-size: 14px;
-            color: gray;
-            font-weight: 400;
-        }
-
-        .link {
-            color: rgb(16, 105, 201);
         }
 
         hr {
@@ -66,550 +24,444 @@
             border: 0px solid;
         }
 
-        .row {
-            margin: 20px 0px;
+        aside {
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            display: grid;
+            place-items: center;
+        }
+
+        aside img {
+            width: 250px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0px 0px 15px -3px;
+        }
+
+        aside h4 {
+            margin: 15px 0px;
+            font-size: 14px;
+            color: gray;
+            font-weight: 400;
+        }
+
+        aside h4 span {
+            color: rgb(16, 105, 201);
+        }
+
+        header {
+            grid-column: 2 / 3;
+            grid-row: 1 / 2;
+        }
+
+        section {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+
+        section ul li {
+            font-size: 13px;
+            margin: 30px 0px;
+        }
+
+        main {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
         }
 
         .content {
             display: flex;
-            margin: 20px 0px;
+        }
+
+        .content div header {
+            padding-left: 27px;
+            padding-bottom: 30px;
         }
 
         .date {
+            flex: 1;
             color: gray;
             font-size: 14px;
         }
 
         .description {
-            padding: 0px 20px;
+            flex: 10;
+            margin: 0px;
         }
 
-        .contact {
-            padding-left: 30px;
+        .responsibility:nth-child(1) {
+            margin: 0px 0px;
         }
 
-        ul {
-            padding-inline-start: 32px;
-            padding-right: 15px;
-        }
-
-        .responsabilities {
+        .responsibility {
             margin: 20px 0px;
-            font-size: 15px;
-        }
-
-        .skills {
-            font-size: 13px;
-            margin: 30px 0px;
         }
 
         footer {
-            padding: 70px;
-            color: gray;
+            grid-column: 1 / 3;
+            color: rgb(181, 181, 181);
         }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <section>
-            <div class="contact">
-                <img class="profile" src="../img/profile.jpeg" alt="">
-                <h1>
-                    Mikolaj Semeniuk
-                </h1>
-                <h4>
-                    Email:<br>
-                    <span class="link">m.semeniuk@icloud.com</span>
-                </h4>
-                <h4>
-                    Telephone:<br>
-                    <span class="link">+48 533 838 844</span>
-                </h4>
-                <h4>
-                    Github:<br>
-                    <span class="link">https://github.com/mikolajsemeniuk/</span>
-                </h4>
-                <h4>
-                    StackOverflow:<br>
-                    <span class="link">https://stackoverflow.com/users/ 13947931/mikolaj-semeniuk</span>
-                </h4>
-                <h2>
-                    Skills
-                </h2>
-                <hr>
-                <ul>
-                    <li class="skills">
-                        Very good knowledge of <b>Java</b> version <b>8</b> and its data structures, including
-                        <b>Optional</b>, <b>Streams</b> and <b>Regex</b> expressions
-                    </li>
-                    <li class="skills">
-                        Very good knowledge of <b>Spring Framework</b> and <b>Spring Security</b>
-                    </li>
-                    <li class="skills">
-                        Very good command of <b>C#</b> version <b>5.0</b> and its data structures, inter alia,
-                        structures <b>IEnumerable</b>, <b>ICollection</b>, <b>OneOf</b>, <b>LINQ</b>,
-                        <b>await/async</b>, <b>Regex</b> and <b>Reflection</b>
-                    </li>
-                    <li class="skills">
-                        Very good command of <b>.NET</b> framework and <b>Entity Framework</b>, <b>Migrations</b>,
-                        <b>Identity Server 4</b> and <b>MassTransit</b>
-                    </li>
-                    <li class="skills">
-                        Very good knowledge of <b>Python</b> version <b>3.7</b>, especially in data analysis and
-                        building models to perform predictions, classification, learning about data structure, data
-                        tagging, generating synthetic data using <b>Sklearn</b>, <b>Pytorch</b>, <b>Tensorflow</b> and
-                        <b>Keras</b>
-                    </li>
-                    <li class="skills">
-                        Very good knowledge of <b>Docker</b> and <b>Kubernetes</b>
-                    </li>
-                    <li class="skills">
-                        Very good knowledge of <b>Linux</b> and <b>Bash</b> (I use Linux every day)
-                    </li>
-                    <li class="skills">
-                        Very good knowledge of <b>Windows Forms</b>
-                    </li>
-                    <li class="skills">
-                        Very good knowledge of <b>VueJS</b> and <b>AngularJS</b> frameworks, frontend application
-                        <b>state management</b>, dynamic data sending, displaying <b>API requests</b>
-                    </li>
-                    <li class="skills">
-                        Very good knowledge of <b>NodeJS</b> with <b>Typescript</b>, <b>ExpressJS</b>, <b>NestJS</b> and
-                        <b>TypeORM</b>
-                    </li>
-                    <li class="skills">
-                        Very good knowledge of <b>Go</b> with <b>Go-Gin</b>, <b>GORM</b>, <b>GRPC</b>
-                    </li>
-                    <li class="skills">
-                        Very good knowledge of the practices of writing <b>Clean Code</b> <b>Uncle Bob's</b>,
-                        <b>SOLID</b> principles, <b>DDD</b>, <b>TDD</b>, <b>YARNI</b>, <b>DRY</b>, <b>KISS</b> and
-                        knowledge of design patterns such as <b>CQRS</b>, <b>CQS</b>, <b>MVC</b>, <b>SOA</b>
-                    </li>
-                    <li class="skills">
-                        Very good knowledge of relational databases such as: <b>SQL Server</b> with <b>SQL Queries</b>,
-                        <b>Stored Procedures</b>, <b>Triggers</b>, <b>Indexes</b> and <b>MySQL</b>, <b>PostgresSQL</b>
-                    </li>
-                    <li class="skills">
-                        Very good knowledge of non-relational databases such as: <b>MongoDB</b>, <b>Redis</b>, poor
-                        <b>Apache Cassandra</b>
-                    </li>
-                    <li class="skills">
-                        Ability to write unit tests and tests using the <b>Selenium</b> framework
-                    </li>
-                    <li class="skills">
-                        Very good command of the <b>English language</b>
-                    </li>
-                    <li class="skills">
-                        Very good knowledge of of environments such as: <b>Visual Studio</b>, <b>Intellij</b>, <b>Visual
-                            Studio Code</b>, <b>Google Colab</b>, <b>Jupyter notebook</b> and <b>Conda</b>
-                    </li>
-                </ul>
+    <aside>
+        <img src="../img/profile.jpeg" alt="Profile Picture">
+        <h1>
+            Mikolaj Semeniuk
+        </h1>
+        <div>
+            <h4>
+                Email:<br>
+                <span class="link">m.semeniuk@icloud.com</span>
+            </h4>
+            <h4>
+                Telephone/WhatsApp:<br>
+                <span class="link">+48 533 838 844</span>
+            </h4>
+            <h4>
+                GitHub:<br>
+                <span class="link">https://github.com/mikolajsemeniuk/</span>
+            </h4>
+            <h4>
+                Stack Overflow:<br>
+                <span class="link">https://stackoverflow.com/users/13947931/mikolaj-semeniuk</span>
+            </h4>
+        </div>
+    </aside>
+    <header>
+        <h2>Certificates</h2>
+        <hr>
+        <div style="padding-top:3em;padding-bottom: 2em;">
+            <img src="../img/AWS-Certified-Solutions-Architect-Professional.png" width="150" height="150"
+                alt="AWS Certified Solutions Architect Professional">
+            <img src="../img/AWS-Certified-Solutions-Architect-Associate.png" width="150" height="150"
+                alt="AWS Certified Solutions Architect Associate">
+            <img src="../img/AWS-Certified-SysOps-Administrator-Associate.png" width="150" height="150"
+                alt="AWS Certified SysOps Administrator Associate">
+            <img src="../img/AWS-Certified-Developer-Associate.png" width="150" height="150"
+                alt="AWS Certified Developer Associate">
+            <img src="../img/AWS-Certified-Cloud-Practitioner.png" width="150" height="150"
+                alt="AWS Certified Cloud Practitioner">
+        </div>
+        <div style="padding-top:2em;padding-bottom: 2em;">
+            <img src="../img/Terraform-Certified-Associate.png" width="150" height="150"
+                alt="Terraform Certified Associate">
+        </div>
+    </header>
+    <section>
+        <h2>Skills</h2>
+        <hr>
+        <ul>
+            <li>
+                Highly proficient in participating in architectural discussions and decision-making to improve system
+                design and functionality, collaborating with cross-functional teams to gather requirements and ensure
+                successful project delivery.
+            </li>
+            <li>
+                Highly skilled in leading technical interviews to recruit highly skilled professionals, ensuring the
+                addition of top-tier talent and senior developers to the team.
+            </li>
+            <li>
+                Skilled in creating and deploying cloud infrastructure using <b>Terraform</b> with <b>Kubernetes</b> and
+                <b>AWS</b> provider.
+            </li>
+            <li>
+                Proficient in developing and maintaining pods, replicaSets, deployments, and services in
+                <b>Kubernetes</b> using <b>Helm</b> package manager and <b>ArgoCD</b>.
+            </li>
+            <li>
+                Experienced in configuring and integrating <b>AWS</b> services such as <b>OpenSearch/ElasticSearch</b>,
+                <b>DynamoDB</b>, <b>SQS</b>, <b>SNS</b>, <b>S3</b>, and <b>Lambda</b> with existing and new APIs.
+            </li>
+            <li>
+                Proficient in setting up monitoring and alerting systems using <b>Prometheus</b> with <b>Grafana</b> and
+                <b>Elastic APM</b> to track system health and performance.
+            </li>
+            <li>
+                Highly skilled in benchmarking and improving the performance of existing services by leveraging advanced
+                features such as the <b>sync</b> package for concurrent data handling, implementing efficient
+                <b>generics</b> for reusable type-safe code, and utilizing <b>goroutines</b>, <b>channels</b>, and
+                <b>waitGroups</b> for high-performance, concurrent applications.
+            </li>
+            <li>
+                Proficient in implementing <b>CI/CD</b> pipelines in <b>GitLab</b> to standardize deployments,
+                conducting thorough code reviews, and writing comprehensive unit tests.
+            </li>
+            <li>
+                Skilled in implementing log aggregation and analysis with tools like the <b>ELK (Elasticsearch,
+                    Logstash, Kibana)</b> stack.
+            </li>
+            <li>
+                Proficient in migrating legacy applications and services to a microservices architecture, and developing
+                and maintaining <b>RESTful</b> and <b>GraphQL APIs</b> to support frontend and mobile applications.
+            </li>
+            <li>
+                Strong proficiency in <b>Java</b> version <b>8</b>, with extensive experience in data structures
+                including <b>Optional</b>, <b>Streams</b>, and <b>Regex</b> expressions.
+            </li>
+            <li>
+                In-depth knowledge of <b>Spring Framework</b> and <b>Spring Security</b>.
+            </li>
+            <li>
+                Advanced command of <b>C#</b> version <b>5.0</b>, including data structures such as <b>IEnumerable</b>,
+                <b>ICollection</b>, <b>OneOf</b>, <b>LINQ</b>, <b>await/async</b>, <b>Regex</b>, and <b>Reflection</b>.
+            </li>
+            <li>
+                Strong knowledge of the <b>.NET</b> framework and <b>Entity Framework</b>, with proficiency in
+                <b>Migrations</b>, <b>Identity Server 4</b>, and <b>MassTransit</b>.
+            </li>
+            <li>
+                Extensive experience with <b>Python</b> version <b>3.7</b> for data analysis, predictive modeling,
+                classification, data structuring, tagging, and generating synthetic data using <b>Sklearn</b>,
+                <b>Pytorch</b>, <b>Tensorflow</b>, and <b>Keras</b>.
+            </li>
+            <li>
+                Proficient in containerization and orchestration tools such as <b>Docker</b> and <b>Kubernetes</b>.
+            </li>
+            <li>
+                Strong knowledge of <b>Linux</b> and <b>Bash</b> scripting.
+            </li>
+            <li>
+                Extensive experience with frontend frameworks <b>VueJS</b> and <b>AngularJS</b>, including state
+                management, dynamic data handling, and API integration.
+            </li>
+            <li>
+                Advanced knowledge of <b>NodeJS</b> with <b>Typescript</b>, <b>ExpressJS</b>, <b>NestJS</b>, and
+                <b>TypeORM</b>.
+            </li>
+            <li>
+                Proficient in <b>Go</b> programming, including <b>Go-Gin</b>, <b>GORM</b>, and <b>GRPC</b>.
+            </li>
+            <li>
+                Deep understanding of <b>Clean Code</b> principles (by <b>Uncle Bob</b>), <b>SOLID</b> principles,
+                <b>Domain-Driven Design (DDD)</b>, <b>Test-Driven Development (TDD)</b>, <b>YAGNI</b>, <b>DRY</b>,
+                <b>KISS</b>, and design patterns such as <b>CQRS</b>, <b>CQS</b>, <b>MVC</b>, and <b>SOA</b>.
+            </li>
+            <li>
+                Advanced knowledge of relational databases including <b>SQL Server</b> (with expertise in <b>SQL
+                    Queries</b>, <b>Stored Procedures</b>, <b>Triggers</b>, and <b>Indexes</b>), <b>MySQL</b>, and
+                <b>PostgresSQL</b>.
+            </li>
+            <li>
+                Extensive experience with non-relational databases such as <b>MongoDB</b>, <b>Redis</b>, and basic
+                knowledge of <b>Apache Cassandra</b>.
+            </li>
+            <li>
+                Skilled in writing unit tests and using the <b>Selenium</b> framework for automated testing.
+            </li>
+            <li>
+                Fluent in English, with strong communication skills.
+            </li>
+            <li>
+                Proficient in development environments such as <b>Visual Studio</b>, <b>Intellij</b>, <b>Visual Studio
+                    Code</b>, <b>Google Colab</b>, <b>Jupyter Notebook</b>, and <b>Conda</b>.
+            </li>
+        </ul>
+    </section>
+    <main>
+        <h2>Experience</h2>
+        <hr>
+        <h3>
+            Limango (Senior Golang Developer and DevOps Engineer)
+        </h3>
+        <div class="content">
+            <div class="date">
+                2022.01 - Present
             </div>
-        </section>
-        <main>
-            <!-- <h1>
-                Senior Programmer and DevOps Engineer
-            </h1> -->
-            <!-- <p>
-                I am currently an extramural 3rd year student in <b>Data Science</b>. I have almost <b>three years of
-                    experience</b> in developing web applications mainly in languages such as <b>Java</b> and <b>C #</b>
-                and data analysis using <b>Python</b>. <br> <br>
-                In my spare time I read books about data analysis, especially about unsupervised learning, and I learn
-                new languages and upload projects to <b>GitHub</b>, <b>Google Colab</b>, I also participate in
-                <b>StackOverflow</b>.<br><br>
-                Apart from my <b>CV</b>, please also check my <b>GitHub</b>
-            </p> -->
-            <h2>Certificates</h2>
-            <hr>
-            <div>
-                <img src="../img/AWS-Certified-Solutions-Architect-Professional.png" width="150" height="150" alt="">
-                <img src="../img/AWS-Certified-Solutions-Architect-Associate.png" width="150" height="150" alt="">
-                <img src="../img/AWS-Certified-SysOps-Administrator-Associate.png" width="150" height="150" alt="">
-                <img src="../img/AWS-Certified-Developer-Associate.png" width="150" height="150" alt="">
-                <img src="../img/AWS-Certified-Cloud-Practitioner.png" width="150" height="150" alt="">
+            <ul class="description">
+                <li class="responsibility">
+                    Participated in architectural discussions and decision-making to improve system design and
+                    functionality with cross-functional teams to gather requirements and ensure successful project
+                    delivery.
+                </li>
+                <li class="responsibility">
+                    Led technical interviews to ensure the addition of highly skilled professionals to the team and
+                    recruited other senior developers.
+                </li>
+                <li class="responsibility">
+                    Created and deployed cloud infrastructure using <b>Terraform</b> with <b>Kubernetes</b> and
+                    <b>AWS</b> provider.
+                </li>
+                <li class="responsibility">
+                    Developed and maintained pods, replicaSets, deployments, and services in <b>Kubernetes</b> using
+                    <b>Helm</b> package manager and <b>ArgoCD</b>.
+                </li>
+                <li class="responsibility">
+                    Configured and integrated <b>AWS</b> services such as <b>OpenSearch/ElasticSearch</b>,
+                    <b>DynamoDB</b>, <b>SQS</b>, <b>SNS</b>, <b>S3</b>, and <b>Lambda</b> with existing and new
+                    APIs.
+                </li>
+                <li class="responsibility">
+                    Set up monitoring and alerting systems using <b>Prometheus</b> with <b>Grafana</b> and
+                    <b>Elastic APM</b> to track system health and performance.
+                </li>
+                <li class="responsibility">
+                    Benchmarking and improving performance of existing services by leveraging advanced features such
+                    as the <b>sync</b> package for concurrent data handling, implementing efficient <b>generics</b>
+                    for reusable type-safe code, and utilizing <b>goroutines</b>, <b>channels</b>, and
+                    <b>waitGroups</b> for high-performance, concurrent applications.
+                </li>
+                <li class="responsibility">
+                    Implementing <b>CI/CD</b> pipelines in <b>GitLab</b> to standardize deployments, conducted
+                    thorough code reviews, and wrote comprehensive unit tests.
+                </li>
+                <li class="responsibility">
+                    Implementing log aggregation and analysis with tools like the <b>ELK (Elasticsearch, Logstash,
+                        Kibana)</b> stack.
+                </li>
+                <li class="responsibility">
+                    Migrating legacy applications and services to a microservices architecture. Developed and
+                    maintained <b>RESTful</b> and <b>GraphQL APIs</b> to support frontend and mobile applications.
+                </li>
+            </ul>
+        </div>
+        <h3>Ernst & Young (Mid C# and Java Developer)</h3>
+        <div class="content">
+            <div class="date">
+                2020.02 - 2021.12
             </div>
-            <div>
-                <img src="../img/Terraform-Certified-Associate.png" width="150" height="150" alt="">
+            <ul class="description">
+                <li class="responsibility">
+                    Architected and implemented robust API endpoints utilizing <b>Spring Web</b> and <b>Asp.Net Core
+                        MVC</b>, following the <b>Controller, Service, Repository/IService</b> pattern to ensure
+                    modularity and maintainability.
+                </li>
+                <li class="responsibility">
+                    Engineered secure authentication mechanisms using <b>OAuth2</b>, <b>Spring Security</b>,
+                    <b>Asp.Net Identity</b>, and <b>Identity Server 4</b> to manage user roles and permissions.
+                </li>
+                <li class="responsibility">
+                    Designed and configured reliable inter-service communication protocols leveraging
+                    <b>RabbitMQ</b> and <b>MassTransit</b> for asynchronous message passing.
+                </li>
+                <li class="responsibility">
+                    Optimized data access and storage solutions, implementing CRUD operations on <b>SQL Server</b>
+                    and integrating <b>Redis</b> for efficient caching and NoSQL capabilities.
+                </li>
+                <li class="responsibility">
+                    Developed comprehensive test suites using <b>JUnit</b>, <b>xUnit</b>, and <b>Moq</b> to ensure
+                    code quality and reliability, achieving high test coverage.
+                </li>
+                <li class="responsibility">
+                    Implemented file upload functionality and ensured data integrity through secure file handling
+                    techniques.
+                </li>
+                <li class="responsibility">
+                    Facilitated seamless version control and collaboration by managing repositories with <b>Git</b>
+                    and <b>Azure DevOps</b>, including branching strategies and merge conflict resolution.
+                </li>
+                <li class="responsibility">
+                    Enabled efficient API consumption by designing and handling <b>SOAP</b>, <b>REST</b>, and
+                    <b>GRAPHQL</b> requests, utilizing the <b>Hot Chocolate</b> framework.
+                </li>
+                <li class="responsibility">
+                    Authored and maintained detailed technical documentation to support ongoing development and
+                    knowledge transfer.
+                </li>
+                <li class="responsibility">
+                    Ensured alignment with agile development practices, contributing to sprint planning, reviews,
+                    and retrospectives in collaboration with <b>Business Analysts</b> and <b>Scrum Masters</b>.
+                </li>
+            </ul>
+        </div>
+        <h3>LastLevel (Junior Full Stack Engineer)</h3>
+        <div class="content">
+            <div class="date">
+                2019.11 - 2020.02
             </div>
-            <h2>
-                Experience
-            </h2>
-            <hr>
-            <div class="row">
-                <div class="title">
-                    <h3>
-                        Limango
-                    </h3>
-                    <p>
-                        <!-- tu dać opis -->
-                    </p>
-                </div>
-                <div class="content">
-                    <div class="date">
-                        2022.02-<br>
-                        now
-                    </div>
-                    <div class="description">
-                        Implementation of new functionalities and modernization of the current
-                        micro services and infrastructure. I was responsible for:
-                        <ul>
-                            <li class="responsabilities">
-                                Create and deploy cloud infrastructure using <b>Terraform</b> with <b>Kubernetes</b>
-                                and <b>AWS</b> provider
-                            </li>
-                            <li class="responsabilities">
-                                Configuring pods, replicaSets, deployments and services in <b>Kubernetes</b>
-                            </li>
-                            <li class="responsabilities">
-                                Implementation of current and new business logic
-                            </li>
-                            <li class="responsabilities">
-                                Configure and integrate <b>AWS</b> services such as: <b>OpenSearch/ElasticSearch</b>,
-                                <b>DynamoDB</b>, <b>SQS</b>, <b>SNS</b>, <b>S3</b> with existing and new services
-                            </li>
-                            <li class="responsabilities">
-                                Adding Elastic APM monitoring to existing services
-                            </li>
-                            <li class="responsabilities">
-                                Benchmarking and improving performance of existing services by making go code
-                                asynchronous using routines, waitGroups and channel worker pools, replacing `http`, or
-                                `encoding/json` with more efficient implementations
-                                such as `fasthttp` or custom json encoders/decoders
-                            </li>
-                            <li class="responsabilities">
+            <ul class="description">
+                <li class="responsibility">
+                    Managed application state using <b>Vue Store</b> and <b>Angular NGRX</b>.
+                </li>
+                <li class="responsibility">
+                    Sent <b>REST</b> requests using <b>Vue Axios</b> and <b>Angular HttpClient</b> to interact with
+                    the backend.
+                </li>
+                <li class="responsibility">
+                    Generated mobile and desktop applications from JavaScript code using <b>Electron</b> and
+                    <b>Apache Cordova</b>.
+                </li>
+                <li class="responsibility">
+                    Dynamically displayed backend data on the frontend.
+                </li>
+                <li class="responsibility">
+                    Implemented new UI components using <b>VueJS</b>, <b>AngularJS</b>, and CSS frameworks like
+                    <b>Bootstrap</b>, <b>Material</b>, <b>Tailwind CSS</b>, and <b>SCSS</b>.
+                </li>
+                <li class="responsibility">
+                    Developed <b>API</b> endpoints using the <b>Laravel</b> framework, adhering to the <b>MVC</b>
+                    pattern.
+                </li>
+                <li class="responsibility">
+                    Managed user authentication and authorization, implementing user roles and generating
+                    authentication tokens using <b>Laravel Passport</b>.
+                </li>
+                <li class="responsibility">
+                    Performed database operations, including reads and writes to the <b>MySQL</b> relational
+                    database.
+                </li>
+                <li class="responsibility">
+                    Implemented email sending functionality for user communications.
+                </li>
+                <li class="responsibility">
+                    Tested <b>API</b> functionality using tools such as <b>Postman</b>, <b>Insomnia</b>, and
+                    <b>Swagger</b>.
+                </li>
+                <li class="responsibility">
+                    Managed version control and collaboration using <b>Git</b>, with repositories hosted on
+                    <b>GitLab</b> and task tracking via <b>RedMine</b>.
+                </li>
+                <li class="responsibility">
+                    Conducted data analysis using <b>Python</b> and implemented algorithms like <b>PCA</b>,
+                    <b>Logistic Regression</b>, <b>Random Forests</b>, <b>K-Means</b>, and <b>K-Nearest
+                        Neighbors</b> from <b>Sklearn</b>.
+                </li>
+            </ul>
+        </div>
 
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="title">
-                        <h3>
-                            Ernst & Young
-                        </h3>
-                        <p>
-                            I was employed as a junior analyst, but the scope of my duties varied depending on the
-                            projects
-                            to which I was assigned. Below are the projects and responsibilities.
-                        </p>
-                    </div>
-                    <div class="content">
-                        <div class="date">
-                            2021.09-<br>
-                            2021.01
-                        </div>
-                        <div class="description">
-                            Implementation of new functionalities and modernization of the internal portal of the
-                            British
-                            insurer. I was responsible for:
-                            <ul>
-                                <li class="responsabilities">
-                                    Adding new functionalities contained on the portal: <b>Jira</b> and
-                                    <b>Confluence</b> in
-                                    accordance with the <b>Scrum</b> methodology
-                                </li>
-                                <li class="responsabilities">
-                                    Communicating with <b>Business Analysts</b> and <b>Scrum Master</b> from Great
-                                    Britain
-                                    in English
-                                </li>
-                                <li class="responsabilities">
-                                    Implementation of <b>API</b> endpoints using <b>Spring Web</b> compatible with the
-                                    <b>Controller, Service, Repository</b> pattern
-                                </li>
-                                <li class="responsabilities">
-                                    Implementing user rights and roles and generating authentication tokens using
-                                    <b>OAuth2</b> and <b>Spring Security</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Configuration of communication between <b>micro services</b> using <b>RabbitMQ</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Implementation of writes and reads to the <b>SQL Server</b> relational database
-                                </li>
-                                <li class="responsabilities">
-                                    Sending and receiving <b>SOAP</b> and <b>REST</b> requests
-                                </li>
-                                <li class="responsabilities">
-                                    Upload files using requests
-                                </li>
-                                <li class="responsabilities">
-                                    Creating new branches, resolving merge conflicts and adding changes to the
-                                    repository
-                                    via <b>Git</b> version control versions,
-                                    and <b>Azure Dev Ops</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Writing unit tests
-                                </li>
-                                <li class="responsabilities">
-                                    Testing <b>API</b> with <b>Postman</b>, <b>Insomnii</b> and <b>Swagger</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Writing and reading technical documentation
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="date">
-                            2020.12-<br>
-                            2020.11
-                        </div>
-                        <div class="description">
-                            Data analysis for <b>EY</b> internal <b>EY</b> business process recognition tool. I was
-                            responsible for:
-                            <ul>
-                                <li class="responsabilities">
-                                    Cleaning and preparation of collected data
-                                </li>
-                                <li class="responsabilities">
-                                    Data analysis using <b>python 3.7</b>, <b>sklearn</b>, <b>pandas</b>, <b>numpy</b>,
-                                    <b>matplotib</b> and <b>seaborn</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Feature detection with <b>sklearn</b> algorithms such as <b>PCA</b>, <b>K-means</b>
-                                    and
-                                    <b>K Nearest Neighbors</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Building data structure learning models using <b>Pytorch</b> and <b>tensorflow</b>
-                                    such
-                                    as <b>Autoencoders</b>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="date">
-                            2020.11- <br>
-                            2020.05
-                        </div>
-                        <div class="description">
-                            Implementation of new functionalities and modernization of the internal portal of the
-                            company
-                            from the United States dealing with the production of prostheses. I was responsible for:
-                            <ul>
-                                <li class="responsabilities">
-                                    Adding new functionalities contained on the portal: <b>Jira</b> and
-                                    <b>Confluence</b> in
-                                    accordance with the <b>Scrum</b> methodology
-                                </li>
-                                <li class="responsabilities">
-                                    Communicating with <b>Business Analysts</b> and <b>Scrum Master</b> from the United
-                                    States in English
-                                </li>
-                                <li class="responsabilities">
-                                    Implementation of <b>API</b> endpoints using <b>Asp Net Core Mvc</b> compatible with
-                                    the
-                                    <b>Controller, Service, IService</b> pattern
-                                </li>
-                                <li class="responsabilities">
-                                    Implementing user rights and roles and generating authentication tokens using
-                                    <b>OAuth2</b> and <b>Asp Net Identity</b> and <b>Identity Server 4</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Communication configuration between <b>microservices</b> using <b>RabbitMQ</b> and
-                                    <b>MassTransit</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Implementation of writes and reads to the <b>SQL Server</b> relational database and
-                                    <b>Redis</b> NoSQL database
-                                </li>
-                                <li class="responsabilities">
-                                    Sending and receiving <b>GRAPHQL</b> requests using the <b>Hot Chocolate</b>
-                                    framework
-                                    and <b>REST</b> requests
-                                </li>
-                                <li class="responsabilities">
-                                    Upload files using requests
-                                </li>
-                                <li class="responsabilities">
-                                    Creating new branches, resolving merge conflicts and adding changes to the
-                                    repository
-                                    via <b>Git</b> version control versions,
-                                    and <b>Azure Dev Ops</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Writing unit tests with <b>xUnit</b> and <b>Moq</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Testing <b>API</b> with <b>Postman</b>, <b>Insomnii</b> and <b>Swagger</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Writing and reading technical documentation
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="content">
-                        <div class="date">
-                            2020.05-<br>
-                            2020.02
-                        </div>
-                        <div class="description">
-                            Implementation of an internal invoice settlement portal for a company from Poznań using the
-                            NodeJS language and the Express.js framework. I was responsible for:
-                            <ul>
-                                <li class="responsabilities">
-                                    Adding new functionalities in accordance with the <b>Scrum</b> methodology
-                                </li>
-                                <li class="responsabilities">
-                                    Communicating with <b>client</b> and <b>Scrum Master</b>
-                                </li>
-                                <li class="responsabilities">
-                                    File validation in terms of business logic
-                                </li>
-                                <li class="responsabilities">
-                                    Uploading, reading and saving a large number of files (mainly excel files) on the
-                                    server
-                                </li>
-                                <li class="responsabilities">
-                                    Sending emails to customers who are in arrears with payment of their debts
-                                </li>
-                                <li class="responsabilities">
-                                    Testing <b>API</b> with <b>Postman</b>, <b>Insomnii</b> and <b>Swagger</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Writes and reads to the <b>PostgresSQL</b> relational database
-                                </li>
-                                <li class="responsabilities">
-                                    Creating new branches, resolving merge conflicts and adding changes to the
-                                    repository
-                                    via <b>Git</b> version control versions,
-                                    and <b>GitLab</b>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="title">
-                        <h3>
-                            LastLevel
-                        </h3>
-                        <p>
-                            I worked as a full-stack developer using technologies such as PHP with Laravel framework and
-                            JavaScript with frameworks, AngularJS and VueJS
-                        </p>
-                    </div>
-                    <div class="content">
-                        <div class="date">
-                            2019.11-<br>
-                            2019.02
-                        </div>
-                        <div class="description">
-                            Implementation of new functionalities on the front and backend side in online stores and
-                            blogs
-                            as well as data analysis for these portals. I was responsible for:
-                            <ul>
-                                <li class="responsabilities">
-                                    Maintaining application state with <b>Vue Store</b> and <b>Angular NGRX</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Sending <b>REST</b> requests using <b>Vue Axios</b> and <b>Angular HttpClient</b> to
-                                    the
-                                    backend
-                                </li>
-                                <li>
-                                    Generating mobile and desktop applications from JavaScript code using
-                                    <b>Electron</b>
-                                    and <b>Apache Cordova</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Dynamic display of backend data
-                                </li>
-                                <li class="responsabilities">
-                                    Implementation of new artwork using <b>VueJS</b> and <b>AngularJS</b>, and
-                                    <b>bootstrap</b>, <b>material</b>, <b>tailwind css frameworks</b> and <b>SCSS</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Implementation of <b>API</b> endpoints using the <b>Laravel</b> framework compatible
-                                    with the <b>MVC</b> pattern
-                                </li>
-                                <li class="responsabilities">
-                                    Implementing user rights and roles and generating authentication tokens using
-                                    <b>Laravel
-                                        Passport</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Implementation of writes and reads to the <b>MySQL</b> referential database
-                                </li>
-                                <li class="responsabilities">
-                                    Sending emails to users
-                                </li>
-                                <li class="responsabilities">
-                                    Testing <b>API</b> with <b>Postman</b>, <b>Insomnii</b> and <b>Swagger</b>
-                                </li>
-                                <li class="responsabilities">
-                                    Creating new branches, resolving merge conflicts and adding changes to the
-                                    repository
-                                    via <b>Git</b> version control versions,
-                                    and <b>GitLab</b>, and <b>RedMine</b>
-                                </li>
-                                <li>
-                                    Data analysis using the <b>Python</b> language and algorithms: <b>PCA</b>,
-                                    <b>Logistic
-                                        Regression</b>, <b>Random Forests</b>, <b>K- Means</b>, <b>K Nearest
-                                        Neighbors</b>
-                                    from <b>Sklearn</b>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <p style="page-break-after: always;">&nbsp;</p>
-                <h2>
-                    Education
-                </h2>
-                <hr>
-                <div class="row">
-                    <div class="title">
-                        <h3>
-                            Warsaw School of Computer Science
-                        </h3>
-                    </div>
-                    <div class="content">
-                        <div class="date">
-                            Present-<br>
-                            2019.10
-                        </div>
-                        <div class="description">
-                            In 2019, I started my studies at the Warsaw School of Computer Science in extramural mode,
-                            specializing in <b>Data Science</b>. I am currently in my third year and I am starting an
-                            engineering thesis about generating synthetic data by the Deep Belief Network model <b>(Deep
-                                Belief Network)</b>.<br><br>Some of my university projects were:
-                            <li class="responsabilities">
-                                Writing artificial neuronal network from scratch using <b>Numpy</b> in <b>C#</b>
-                                language
-                            </li>
-                            <li class="responsabilities">
-                                Creating <b>unsupervised nlp algorithms/models</b> to classify text in python and
-                                <b>PyTorch/Scikit</b>
-                            </li>
-                            <li class="responsabilities">
-                                Creating <b>CQRS</b> in <b>C#</b> using <b>Identity Server 4</b> and <b>RabbitMQ</b>
-                            </li>
-                            <li class="responsabilities">
-                                Creating application based on client and server using <b>Golang</b>, <b>GORM</b> and
-                                <b>GRPC</b>
-                            </li>
-                            <li class="responsabilities">
-                                Creating application using <b>Go</b> with <b>Go-Gin</b>, <b>GORM</b> and <b>ReactJS</b>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-        </main>
-    </div>
+        <h2>Education</h2>
+        <hr>
+        <h3>
+            Warsaw University of Technology (Master's Degree in Computer Science)
+        </h3>
+        <div class="content">
+            <div class="date">
+                October 2023 - Present
+            </div>
+            <div>
+                <header>
+                    Currently pursuing a Master's degree in Computer Science at Warsaw University of Technology. My
+                    Master's dissertation focuses on developing a novel cryptocurrency using Rust, aiming to enhance
+                    security and efficiency in decentralized transactions.
+                </header>
+            </div>
+        </div>
+        <h3>
+            Warsaw School of Computer Science (Bachelor's Degree in Computer Science)
+        </h3>
+        <div class="content">
+            <div class="date">
+                October 2019 - September 2023
+            </div>
+            <div>
+                <header>
+                    Completed a Bachelor's degree in Computer Science at the Warsaw School of Computer Science. My
+                    Bachelor's dissertation involved developing an application using Golang and React that analyzes CVs
+                    with AI and Elastic Search algorithms to match candidates with job requirements.
+                </header>
+            </div>
+        </div>
+    </main>
     <footer>
-        I consent to the processing of my personal data for the purposes of the recruitment process
-        (in accordance with the Act of May 10, 2018 on the protection of personal data (Journal of Laws of 2018, item
-        1000)
-        and in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016.
-        on the protection of individuals with regard to the processing of personal data
-        and on the free movement of such data and the repeal of Directive 95/46 / EC (GDPR).
+        I consent to the processing of my personal data for recruitment purposes in accordance with applicable data
+        protection
+        laws and regulations (in accordance with
+        the Act of May 10, 2018, on the protection of personal data (Journal of Laws of 2018, item 1000) and in
+        accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the
+        protection of individuals with regard to the processing of personal data and on the free movement of such data
+        and the repeal of Directive 95/46/EC (GDPR)).
     </footer>
 </body>
 
