@@ -3,6 +3,7 @@
 <h3>Certifications, I achieved:</h3>
 <p align="left">
   <img style="object-fit: contain;" src="./img/AWS-Certified-Solutions-Architect-Professional.png" width="100" height="100" alt="cs">
+  <img style="object-fit: contain;" src="./img/AWS-Certified-DevOps-Engineer-Professional.png" width="100" height="100" alt="cs">
   <img style="object-fit: contain;" src="./img/Terraform-Certified-Associate.png" width="100" height="100" alt="cs">
   <img style="object-fit: contain;" src="./img/AWS-Certified-Solutions-Architect-Associate.png" width="100" height="100" alt="cs">
   <img style="object-fit: contain;" src="./img/AWS-Certified-SysOps-Administrator-Associate.png" width="100" height="100" alt="cs">
